@@ -1,5 +1,5 @@
 @import "./sass/vendors/bootstrap.scss";
-
+@import "node_modules/bootstrap/scss/bootstrap";
 @import "./sass/abstracts/mixins";
 @import "./sass/abstracts/variables";
 @import "./sass/abstracts/helpers";
@@ -16,3 +16,8 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
+@use "node_modules/bootstrap/scss/bootstrap";
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
