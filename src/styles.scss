@@ -1,5 +1,8 @@
-@import "./sass/vendors/bootstrap.scss";
-@import "node_modules/bootstrap/scss/bootstrap";
+// ✅ 1. أولًا استورد Bootstrap مرة واحدة بمسار صحيح نسبيًا
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// ✅ 2. بعدها استورد باقي ملفاتك الخاصة
+@import "./sass/vendors/bootstrap";
 @import "./sass/abstracts/mixins";
 @import "./sass/abstracts/variables";
 @import "./sass/abstracts/helpers";
@@ -16,7 +19,8 @@
 @import "./sass/sections/contact";
 @import "./sass/sections/hero";
 @import "./sass/sections/projects";
-@use "node_modules/bootstrap/scss/bootstrap";
+
+// ✅ 3. كود CSS مباشر
 body {
   background-color: #f8f9fa;
   font-family: Arial, sans-serif;
